@@ -1,0 +1,382 @@
+< IDOCTYPE html>
+chtml lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.9">
+     <title>Vacation Trip planner</title>
+
+     <!-- fonts link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+      <!-- css file linked-->
+       <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<body>
+    <!--header section-->
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>T</span>ravels</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+<!--login form container-->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="Your email" required>
+        <input type="password" class="box" placeholder="Password" required>
+        <input type="submit" value="Login Now" class="btn">
+        <div class="remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <p class="forgot-password">Forgot password? <a href="#">Click here</a></p>
+        <p class="no-account">Don't have an account? <a href="#">Sign Up</a></p>
+    </form>
+</div>
+
+
+<!--home section starts-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Adventure is worthwhile</h3>
+        <p>Discover new places with us, Adventure Awaits</p>
+        <a href="#" class="btn">Explore More</a>
+
+        <!-- Dot navigation for videos, positioned below the button -->
+        <div class="controls">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="video-slider">
+            <video src="travel3.mp4" loop autoplay muted></video>
+            <video src="tajmahal.mp4" loop autoplay muted></video>
+            <video src="travel5.mp4" loop autoplay muted></video>
+            <video src="travel6.mp4" loop autoplay muted></video>
+            <video src="travel7.mp4" loop autoplay muted></video>
+        </div>
+    </div>
+</section>
+
+<!--book section-->
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span class="space"></span>
+        <span>y</span>
+        <span>o</span>
+        <span>u</span>
+        <span>r</span>
+        <span class="space"></span>
+        <span>t</span>
+        <span>r</span>
+        <span>i</span>
+        <span>p</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="trip analyse .jpeg" alt="Trip Analyze">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Where to?</h3>
+                <input type="text" id="whereTo" placeholder="Place name" autocomplete="off">
+                <div class="dropdown" id="whereToDropdown"></div>
+            </div>
+            <div class="inputBox">
+                <h3>Where from?</h3>
+                <input type="text" id="whereFrom" placeholder="Place name" autocomplete="off">
+                <div class="dropdown" id="whereFromDropdown"></div>
+            </div>
+            <div class="inputBox">
+                <h3>Number of guests</h3>
+                <input type="number" placeholder="Number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>Arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Leaving</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Submit" class="submit-btn">
+            </div>
+        </form>
+
+    </div>
+
+</section>
+
+<!--packages-->
+
+
+<section id="packages">
+    <h2>Our Packages</h2>
+    <div class="package-container">
+        <!-- Package 1 -->
+        <div class="package">
+            <img src="package image1.jpg" alt="Package Image 1">
+            <div class="package-details">
+                <h3><i class="fas fa-map-marker-alt"></i>Rajgir, BR,  India</h3>
+                <p class="price">Rs.2400</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button class="check-more">Check More</button>
+            </div>
+        </div>
+        <!-- Package 2 -->
+        <div class="package">
+            <img src="package image 2.jpg" alt="Package Image 2">
+            <div class="package-details">
+                <h3><i class="fas fa-map-marker-alt"></i>Kedarnath Temple, Uttarakhand, India</h3>
+                <p class="price">Rs.5000</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="check-more">Check More</button>
+            </div>
+        </div>
+        <!-- Package 3 -->
+        <div class="package">
+            <img src="package image3.jpg" alt="Package Image 3">
+            <div class="package-details">
+                <h3><i class="fas fa-map-marker-alt"></i>New Delhi, india</h3>
+                <p class="price">Rs.3820</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="check-more">Check More</button>
+            </div>
+        </div>
+        <!-- Package 4 -->
+        <div class="package">
+            <img src="package image4.jpg" alt="Package Image 4">
+            <div class="package-details">
+                <h3><i class="fas fa-map-marker-alt"></i>Thiruttani, TN, India</h3>
+                <p class="price">Rs.4100</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="check-more">Check More</button>
+            </div>
+        </div>
+        <!-- Package 5 -->
+        <div class="package">
+            <img src="package image 5.jpg" alt="Package Image 5">
+            <div class="package-details">
+                <h3><i class="fas fa-map-marker-alt"></i>Ahmedabad, GJ, India</h3>
+                <p class="price">Rs.3300</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="check-more">Check More</button>
+            </div>
+        </div>
+        <!-- Package 6 -->
+        <div class="package">
+            <img src="package image 6.jpg" alt="Package Image 6">
+            <div class="package-details">
+                <h3><i class="fas fa-map-marker-alt"></i>Srinagar, JK, India</h3>
+                <p class="price">Rs.5510</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button class="check-more">Check More</button>
+            </div>
+        </div>
+    </div>
+    <div class="more-options">
+        <button id="loadMore">More Packages</button>
+    </div>
+</section>
+
+<!--services-->
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Find budget-friendly accommodations that meet your needs.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>Enjoy delicious meals and refreshing beverages at great prices.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Safety Guide</h3>
+            <p>Your safety is our priority; travel with confidence.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-clock"></i>
+            <h3>Faster Travel</h3>
+            <p>Optimize your travel time with our efficient services.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-bicycle"></i>
+            <h3>Local Tours</h3>
+            <p>Explore the best local attractions with our guided tours.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-comments"></i>
+            <h3>24/7 Customer Support</h3>
+            <p>We're here to assist you anytime, anywhere.</p>
+        </div>
+    </div>
+</section>
+
+
+<!--contact us-->
+
+<section id="contact" class="contact-section">
+    <div class="contact-image">
+        <img src="contact us img2.jpg" alt="Travel" />
+    </div>
+    <div class="contact-form">
+        <h2>Need Assistance?</h2>
+        <form id="inquiry-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <button type="submit">Enquire Now</button>
+        </form>
+    </div>
+</section>
+
+<!--extra sec-->
+
+<section class="logo-section">
+    <h2>Explore With Us ...</h2>
+    <div class="logo-container">
+        <div class="logo"><img src="logoimg1.png" alt="Logo 1"></div>
+        <div class="logo"><img src="logoimg2.jpg" alt="Logo 2"></div>
+        <div class="logo"><img src="logoimg3.jpg" alt="Logo 3"></div>
+        <div class="logo"><img src="logoimg4.jpg" alt="Logo 4"></div>
+        <div class="logo"><img src="logoimg5.jpg" alt="Logo 5"></div>
+        <div class="logo"><img src="logoimg6.jpg" alt="Logo 6"></div>
+        <div class="logo"><img src="logoimg7.jpg" alt="Logo 7"></div>
+        <div class="logo"><img src="logoimg8.jpg" alt="Logo 8"></div>
+        <div class="logo"><img src="logoimg9.jpg" alt="Logo 9"></div>
+        <div class="logo"><img src="logoimg10.jpg" alt="Logo 10"></div>
+        <div class="logo"><img src="logoimg11.jpg" alt="Logo 11"></div>
+        <div class="logo"><img src="logoimg12.jpg" alt="Logo 12"></div>
+        <div class="logo"><img src="logoimg13.jpg" alt="Logo 13"></div>
+        <div class="logo"><img src="logoimg14.jpg" alt="Logo 14"></div>
+    </div>
+</section>
+
+
+<!--About sec-->
+
+
+<section id="about-us" style="position: relative; display: flex; align-items: center; padding: 50px; color: white;">
+    <div style="flex: 1; padding-right: 20px; z-index: 1;">
+        <h2>About Us</h2>
+        <p>Welcome to Trip Analyzer, your go-to platform for planning and optimizing your travel experiences! We are dedicated to helping you make the most out of your trips with data-driven insights, personalized itineraries, and real-time analytics.</p>
+        
+        <h3>Get in Touch</h3>
+        <p>Contact us at: 
+            <a href="tel:7001157474" style="color: white; text-decoration: none;">
+                <i class="fas fa-phone"></i> 7001157474
+            </a>
+        </p>
+    </div>
+    
+    <div style="flex: 1; text-align: right; z-index: 1;">
+        <h3>Follow Us</h3>
+        <div style="margin-top: 20px;">
+            <a href="https://www.instagram.com/your_instagram_handle" target="_blank" style="color: white; margin: 0 10px;">
+                <i class="fab fa-instagram" style="font-size: 24px;"></i>
+            </a>
+            <a href="mailto:onsrudrasikdar@gmail.com" target="_blank" style="color: white; margin: 0 10px;">
+                <i class="fas fa-envelope" style="font-size: 24px;"></i>
+            </a>
+        </div>
+    </div>
+
+    <img src="about us sec.jpg" alt="About Us Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(5px); z-index: 0;">
+</section>
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+
+
+</body>
